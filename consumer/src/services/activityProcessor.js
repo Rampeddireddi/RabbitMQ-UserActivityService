@@ -29,4 +29,9 @@ async function processActivity(data) {
   });
 }
 
-module.exports = { connectDB, processActivity };
+function __setActivityModel(model) {
+  Activity = model;
+}
+// module.exports = { connectDB, processActivity };
+module.exports = { connectDB, processActivity, __setActivityModel };
+
